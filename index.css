@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: -18px;
+    margin-right: -7px;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav #searchBar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+#searchBar #input {
+    height: 42px;
+    width: 280px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#searchBar #butt {
+    height: 44px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(219, 22, 85);
+    color: white;
+    font-size: large;
+}
+
+#searchBar #butt:hover {
+    background-color: rgb(237, 9, 81);
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer h4 {
+    padding: 10px;
+    margin: 0;
+    animation: text 20s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+#container {
+    position: relative;
+    top: 140px;
+    left: 350px;
+    display: flex;
+}
+
+#PosterDiv {
+    flex: 1;
+    position: relative;
+    right: 100px;
+    top: -100px;
+}
+
+#PosterDiv img {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+#textData {
+    flex: 1;
+    position: relative;
+    right: 350px;
+}
+
+#textData P {
+    padding-bottom: 15px;
+    font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+    nav img {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    #searchBar {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #searchBar #input {
+        width: 160px;
+        height: 30px;
+        position: absolute;
+        top: -10px;
+        right: 50px;
+    }
+    #searchBar #butt {
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: -10px;
+        right: -15px;
+    }
+    body {
+        overflow-x: hidden;
+        /* overflow-y: hidden; */
+    }
+}
